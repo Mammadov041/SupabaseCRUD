@@ -1,5 +1,6 @@
 "use client";
 
+import { PencilOff, Trash2 } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -49,7 +50,7 @@ export default function Home() {
           todos.map((todo, index) => (
             <div
               key={index}
-              className="bg-gray-50 p-6 mb-4 border border-gray-300 rounded-lg shadow-sm hover:shadow-md transition"
+              className="w-[200px] h-[100px] bg-gray-50 p-6 mb-4 border border-gray-300 rounded-lg shadow-sm hover:shadow-md transition"
             >
               <h2 className="text-xl font-semibold text-gray-800 mb-1">
                 title : {todo.title}
@@ -69,13 +70,13 @@ export default function Home() {
                   href={`/todos/edit/${todo.id}`}
                   className="text-blue-600 hover:underline font-medium"
                 >
-                  ✏️ Edit
+                  <PencilOff />
                 </Link>
                 <button
                   onClick={() => deleteTodo(todo.id)}
                   className="text-red-500 hover:underline font-medium"
                 >
-                  🗑️ Delete
+                  <Trash2 />
                 </button>
               </div>
             </div>

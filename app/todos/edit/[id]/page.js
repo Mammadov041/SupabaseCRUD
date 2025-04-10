@@ -29,7 +29,7 @@ export default function EditTodo() {
   return (
     <div className="w-full h-screen flex items-center justify-center">
       <form className="flex flex-col w-[400px]  border border-zinc-300 p-5 rounded-md">
-        <h1 className="text-2xl font-medium">Add Todo</h1>
+        <h1 className="text-2xl font-medium">Edit Todo</h1>
 
         <div className="flex flex-col gap-2 [&>input]:mb-3 mt-8">
           <Label htmlFor="title">Title</Label>
